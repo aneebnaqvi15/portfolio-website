@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AneebNaqvi Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">SyedAneeb.</div>
+        <ul class="navbar-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+        <button class="toggle-menu" onclick="toggleMenu()">☰</button>
+    </nav>
+    <script>
+        function toggleMenu() {
+            const navbarMenu = document.querySelector('.navbar-menu');
+            navbarMenu.classList.toggle('show');
+        }
+    </script>
+
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="text-area">
+                <h2>Frontend Developer</h2>
+                <h1>Hi, I am <span class="highlight">Aneeb Naqvi</span> from Pakistan</h1>
+                <p>A passionate <span class="highlight">Developer</span> with a creative vision</p>
+                <button class="hire-me-btn">Hire Me</button>
+            </div>
+            <div class="image-area">
+                <!-- 3D Glowing Image -->
+                <img src="image/aneeb.jpg" alt="Aneeb Naqvi" class="hero-image">
+                <div class="glow-effect"></div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <div class="profile-picture">
+                <img src="image/aneeb.jpg" alt="Aneeb Naqvi">
+            </div>
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>
+                    Hi, I'm a UI/UX Designer passionate about creating intuitive and delightful digital experiences.
+                    With years of experience in the industry, I specialize in crafting user-centric designs that align
+                    with business goals. My design philosophy is to create visually appealing interfaces that are
+                    intuitive and easy to use. Let's collaborate and create exceptional user experiences!
+                </p>
+                <div class="about-categories">
+                    <button class="category-btn" data-target="skills-section">Skills</button>
+                    <button class="category-btn" data-target="experience-section">Experience</button>
+                    <button class="category-btn" data-target="education-section">Education</button>
+                </div>
+                <div class="about-details">
+
+
+
+                    <!-- Skills Section -->
+                    <div class="detail-section" id="skills-section">
+                        <div class="detail">
+                            <h3>UI/UX</h3>
+                            <p>Designing Web/App Interfaces</p>
+                        </div>
+                        <div class="detail">
+                            <h3>Web Development</h3>
+                            <p>Web App Development</p>
+                        </div>
+                        <div class="detail">
+                            <h3>App Development</h3>
+                            <p>Building Android/iOS apps</p>
+                        </div>
+                    </div>
+                    <!-- Experience Section -->
+                    <div class="detail-section" id="experience-section" style="display: none;">
+                        <div class="detail">
+                            <h3>2023-Current</h3>
+                            <p>UI/UX Designing Training at MUST University</p>
+                        </div>
+                        <div class="detail">
+                            <h3>2019-2021</h3>
+                            <p>Team Lead at StarApp LLC</p>
+                        </div>
+                        <div class="detail">
+                            <h3>2017-2019</h3>
+                            <p>Internship at FAST University Islamabad</p>
+                        </div>
+                    </div>
+                    <!-- Education Section -->
+                    <div class="detail-section" id="education-section" style="display: none;">
+                        <div class="detail">
+                            <h3>2019</h3>
+                            <p>BSCS from MUST University</p>
+                        </div>
+                        <div class="detail">
+                            <h3>2017</h3>
+                            <p>UI/UX Designing Training at MUST University</p>
+                        </div>
+                        <div class="detail">
+                            <h3>2014</h3>
+                            <p>MSCS from FAST University Islamabad</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- services------------------- -->
+    <section id="services" class="services-section">
+        <h2>Services</h2>
+        <div class="services-container">
+            <!-- Web Development Card -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <h3>Web Development</h3>
+                <p>Offering full-stack web development services to create responsive, dynamic, and secure web applications using the latest technologies.</p>
+                <a href="#" class="learn-more">learn more</a>
+            </div>
+    
+            <!-- App Development Card -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fa-solid fa-mobile"></i>
+                </div>
+                <h3>App Development</h3>
+                <p>Providing mobile app development for both iOS and Android platforms, focusing on performance, user experience, and innovative features.</p>
+                <a href="#" class="learn-more">learn more</a>
+            </div>
+    
+            <!-- Graphic Designing Card -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fa-solid fa-paintbrush"></i>
+                </div>
+                <h3>Graphic Designing</h3>
+                <p>Creating visually stunning graphics for digital and print media, including branding, marketing materials, and UI/UX designs.</p>
+                <a href="#" class="learn-more">learn more</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Portfolio Section -->
+<section id="portfolio" class="portfolio-section">
+    <h2>Portfolio</h2>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!-- Portfolio Item 1 -->
+            <div class="swiper-slide">
+            <!-- Portfolio Item 1 -->
+            <div class="image-container">
+                <img src="image/work-1.png" alt="Image 1">
+                <div class="overlay">
+                    <h3>Social Media App</h3>
+                    <p>The App connects you to the most talented people around the world. Download it from the Play Store.</p>
+                    <a href="#" class="download-link">Download</a>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="image/work-2.png" alt="Shopping App">
+                <div class="overlay">
+                    <h3>Shopping App</h3>
+                    <p>The App connects you to the most talented people around the world. Download it from the Play Store.</p>
+                    <a href="#" class="download-link">Download</a>
+                </div>
+            </div>
+            
+            <div class="image-container">
+                <img src="image/work-3.png" alt="Music App">
+                <div class="overlay">
+                    <h3>Music App</h3>
+                    <p>The App connects you to the most talented people around the world. Download it from the Play Store.</p>
+                    <a href="#" class="download-link">Download</a>
+                </div>
+            </div>
+            
+            
+            </div>
+            
+            <!-- Add more slides as needed -->
+        </div>
+
+        <!-- Navigation controls -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+<!-- contact me  -->
+<section class="contact-me" id="contact">
+    <div class="contact-container">
+        <h2>Contact Me</h2>
+        <p>If you have any questions or just want to say hello, feel free to reach out!</p>
+        
+        <!-- Contact Form -->
+        <form class="contact-form">
+            <div class="form-group">
+                <input type="text" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="contact-btn">Send Message</button>
+        </form>
+        
+        <!-- Contact Details -->
+        <div class="contact-details">
+            <h3>Reach Me At</h3>
+            <p>Email: <a href="mailto:syedaneebajk00786@gmail.com">syedaneebajk00786@gmail.com</a></p>
+            <p>Phone: <a href="tel:+1234567890">+923556606136</a></p>
+            <div class="social-links">
+                <a href="https://facebook.com/yourprofile" target="_blank" class="social-icon facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 320 512"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06H295V6.26S277.05 0 248.71 0c-73.52 0-121.2 44.38-121.2 124.72v70.62H76.64V288h51.07v224h100.2V288z"/></svg>
+                </a>
+                <a href="https://twitter.com/yourprofile" target="_blank" class="social-icon twitter">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 512 512"><path fill="currentColor" d="M459.4 151.7c.3 4.1 .3 8.2 .3 12.3 0 125.7-95.7 270.4-270.4 270.4-53.9 0-103.9-15.7-146-42.6 7.5.9 15 .9 22.8 .9 44.7 0 85.6-15.2 118-40.9-41.8-.7-76.9-28.3-89.1-66.2 5.8.9 11.6 1.5 17.7 1.5 8.5 0 16.9-1.1 24.8-3.2-43.8-8.7-76.8-47.5-76.8-94v-1.1c12.9 7.2 27.7 11.6 43.4 12.1-26-17.5-43.1-47.3-43.1-81 0-17.8 4.8-34.4 13.3-48.7 48.6 59.7 121.2 99 202.8 103.2-1.5-7.2-2.3-14.7-2.3-22.3 0-53.8 43.6-97.4 97.4-97.4 28.1 0 53.4 11.9 71.2 30.9 22.3-4.4 43.3-12.6 62.4-24-7.5 23.5-23.5 43.3-44.4 55.8 19.7-2.1 38.5-7.6 56-15.2-13.4 19.6-30.1 36.9-49.2 50.7z"/></svg>
+                </a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" class="social-icon linkedin">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 448 512"><path fill="currentColor" d="M100.3 448H7V148h93.3zm-46.6-339C24.4 109 0 84.6 0 55.2 0 25.7 24.4 1 53.7 1c29.4 0 53.6 24.7 53.6 54.2 0 29.4-24.2 53.6-53.6 53.6zm394.3 291V305.1c0-76-40.4-111.6-94.2-111.6-41.3 0-62.2 23.1-72.8 39.3v-33.7H180.9c1.2 22 0 235 0 235h93.6v-131c0-7 .5-14 2.6-18.8 5.6-14.3 18.4-29.2 39.9-29.2 28.1 0 39.4 22.1 39.4 54.6V448h93.5z"/></svg>
+                </a>
+                <a href="https://github.com/yourprofile" target="_blank" class="social-icon github">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-.2 4.4-.6 6.8-2.2 12-11.2 15.8-23.6 9.9-27.1-12.3-55.2-38.5-55.2-81 0-23.7 10.4-44.2 30.6-59-3.8-9.6-5.3-20.8-3.8-33.7 2.4-18 17.2-19.6 29.7-13.5 13.4 6.3 26.8 19.8 35.3 36.6 8.7 17.1 9.9 30.8 6.6 39.4 13.3 4.6 27 9.4 42.4 15.8 4.5 1.8 8.5 3.8 12.1 5.8-3.2-9.8-8.3-20.3-15.2-30.4-10.6-15.7-32.3-26.5-51.8-30.1-9.8-1.8-19.9-.2-28.7 4.6 4.1 10.4 12.6 23 24.2 35.3-4.8 1.1-9.4 2.5-13.9 4.5-12.4 5.5-23.3 13.8-31.8 25.4-8.6 11.7-12.7 26.3-13.3 42 .1 7.5.5 17.6 1.2 29.2 1.3 14.5 6.2 24.7 15.7 29.7 13.5 7.3 30.5 8.2 44.4 2.7 8.5-3.3 14.4-8.6 19.7-14.9 4.4 3.2 10.5 6.8 19.8 11 7.5 3.2 15.7 6.2 24.1 6.2 29.7 0 52.7-13 64-37.1 2.3-4.5 4-9.8 5.6-15.5 6.3-24.5-8.5-44.3-23.6-59.3-8.7-8.7-18.9-15.7-29.8-22.8z"/></svg>
+                </a>
+            </div>
+            
+            
+        </div>
+    </div>
+</section>
+
+</section>
+
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
