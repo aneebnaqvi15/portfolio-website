@@ -1,9 +1,4 @@
 
-
-https://github.com/user-attachments/assets/a5d7dc89-871e-492c-8419-7349b4b87e5d
-
-
-
 https://github.com/user-attachments/assets/d8a07b58-8f67-4f28-8a21-b452d8ea8c2e
 
 # portfolio-website
